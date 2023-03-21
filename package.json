@@ -4,15 +4,20 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./server.mjs"
+    "start": "nodemon ./server.mjs",
+    "studio": "npx prisma studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^4.11.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.21"
+  },
+  "devDependencies": {
+    "prisma": "^4.11.0"
   }
 }
