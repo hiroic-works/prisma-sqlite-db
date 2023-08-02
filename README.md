@@ -5,7 +5,7 @@
 `.env`を作成する。
 
 ```.env
-PORT=8080
+PORT=5000
 
 # This was inserted by `prisma init`:
 # Environment variables declared in this file are automatically made available to Prisma.
@@ -19,10 +19,22 @@ DATABASE_URL="file:./dev.db"
 
 ## 起動
 
-サーバー: `npm start`
+サーバー起動: `pnpm start`
 
-DB GUI: `npm run studio`
+DB GUI 起動: `pnpm studio`
 
-## Prisma参考
+## 操作
+
+seed データの追加: `pnpm seed`
+
+prisma migrate: `pnpm migrate`
+
+## CRUD
+
+VS Code の拡張機能「REST Client」を使用。
+
+https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+## Prisma 参考
 
 https://www.prisma.io/docs/getting-started/quickstart
