@@ -1,5 +1,17 @@
 # prisma-sqlite-db
 
+## TODO API
+
+一覧取得[GET]: `/api/todos`
+
+1 件取得[GET]: `/api/todos/:id`
+
+新規登録[POST]: `/api/todos`
+
+1 件更新[PUT]: `/api/todos/:id`
+
+1 件削除[DELETE]: `/api/todos/:id`
+
 ## 初回設定
 
 `.env`を作成する。
