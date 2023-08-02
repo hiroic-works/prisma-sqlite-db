@@ -1,0 +1,31 @@
+// 事前に「REST Client」のvscode拡張機能入れとく
+
+@_apiurl = http://localhost:5000/api
+
+//*************** Hello API ***************//
+
+###***** 取得 *****###
+GET {{_apiurl}}/todos HTTP/1.1
+
+###***** 1件取得 *****###
+GET {{_apiurl}}/todos/13bc4709-8ff0-447d-8277-7de9666ce0f9 HTTP/1.1
+
+###***** 作成 *****###
+POST {{_apiurl}}/todos HTTP/1.1
+content-type: application/json
+
+{
+    "text": "add test todo"
+}
+
+###***** 更新 *****###
+PUT {{_apiurl}}/todos/13bc4709-8ff0-447d-8277-7de9666ce0f9 HTTP/1.1
+content-type: application/json
+
+{
+    "text": "updated test todo",
+    "isDone": true
+}
+
+###***** 削除 *****###
+DELETE {{_apiurl}}/todos/13bc4709-8ff0-447d-8277-7de9666ce0f9 HTTP/1.1

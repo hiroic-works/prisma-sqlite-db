@@ -2,10 +2,14 @@
   "name": "prisma-sqlite-db",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./server.mjs",
-    "studio": "npx prisma studio"
+    "start": "nodemon ./server.js",
+    "studio": "npx prisma studio",
+    "seed": "node prisma/seed.js",
+    "migrate": "pnpx prisma migrate dev --name init",
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "",
