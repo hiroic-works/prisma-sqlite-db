@@ -5,6 +5,7 @@
 `.env`を作成する。
 
 ```.env
+NODE_ENV="development" # "development" or "production"
 PORT=5000
 
 # This was inserted by `prisma init`:
